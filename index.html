@@ -801,7 +801,8 @@
           </div>
           <div class="col-lg-8 col-sm-12">
             <form id="contact-form" class='rd-mailform' method="post" action="bat/rd-mailform.php">
-              <div class="row">
+              <input type="hidden" name="form-type" value="contact"/>
+              <div class="form-group">
                 <!-- ! Username Field -->
                 <div class="col-lg-6 col-sm-12 mb-3" data-aos="fade-up" data-aos-delay="100">
                   <div class="input-group has-validation">
@@ -810,7 +811,7 @@
                                            type="text"
                                            name="name"
                                            data-constraints="@NotEmpty"/>
-                                          <label for="mailform-input-name">Nome</label>
+                                          <label data-add-placeholder for="mailform-input-name">Nome</label>
                     </div>
                     <div class="invalid-feedback">
                       Please Enter Your Name.
@@ -825,7 +826,7 @@
                                            type="text"
                                            name="email"
                                            data-constraints="@NotEmpty @Email"/>
-                                          <label for="mailform-input-email">Email</label>
+                                          <label data-add-placeholder for="mailform-input-email">Email</label>
                     </div>
                     <div class="invalid-feedback">
                       Please Enter Your Email.
@@ -838,7 +839,7 @@
                                            type="text"
                                            name="assunto"
                                            data-constraints="@NotEmpty"/>
-                                        <label for="mailform-input-assunto" class="ps-4">Assunto</label>
+                                        <label data-add-placeholder for="mailform-input-assunto">Assunto</label>
                 </div>
                 <!-- ! Comments Field -->
                 <div class="col-lg-12 mb-3" data-aos="fade-up" data-aos-delay="1000">
@@ -846,7 +847,7 @@
                     <textarea id="mailform-input-textarea" style="height: 200px"
                                 name="message"
                                 data-constraints="@NotEmpty"></textarea>
-                              <label for="mailform-input-textarea">Texto</label>
+                              <label data-add-placeholder for="mailform-input-textarea">Texto</label>
                   </div>
                 </div>
                 <!-- ! Submit Button -->
