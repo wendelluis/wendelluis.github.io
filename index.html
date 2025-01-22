@@ -807,11 +807,10 @@
                   <div class="input-group has-validation">
                     <div class="form-floating flex-grow-1">
                       <input id="mailform-input-name" class="form-control"
-                                            placeholder="Email"                   
-                                            type="text"
+                                           type="text"
                                            name="name"
                                            data-constraints="@NotEmpty"/>
-                                          <label for="floatingInputGroup1">Nome</label>
+                                          <label for="mailform-input-name">Nome</label>
                     </div>
                     <div class="invalid-feedback">
                       Please Enter Your Name.
@@ -826,7 +825,7 @@
                                            type="text"
                                            name="email"
                                            data-constraints="@NotEmpty @Email"/>
-                                          <label for="floatingInputGroup2">Email</label>
+                                          <label for="mailform-input-email">Email</label>
                     </div>
                     <div class="invalid-feedback">
                       Please Enter Your Email.
@@ -835,19 +834,19 @@
                 </div>
                 <!-- ! Subject Field -->
                 <div class="form-floating col-lg-12 mb-3 flex-grow-1" data-aos="fade-up" data-aos-delay="800">
-                  <input id="mailform-input-name"
+                  <input id="mailform-input-assunto"
                                            type="text"
                                            name="assunto"
                                            data-constraints="@NotEmpty"/>
-                                        <label for="floatingSubject" class="ps-4">Assunto</label>
+                                        <label for="mailform-input-assunto" class="ps-4">Assunto</label>
                 </div>
                 <!-- ! Comments Field -->
                 <div class="col-lg-12 mb-3" data-aos="fade-up" data-aos-delay="1000">
                   <div class="form-floating">
-                    <textarea id="mailform-input-textarea"
+                    <textarea id="mailform-input-textarea" style="height: 200px"
                                 name="message"
                                 data-constraints="@NotEmpty"></textarea>
-                              <label for="floatingTextarea2">Texto</label>
+                              <label for="mailform-input-textarea">Texto</label>
                   </div>
                 </div>
                 <!-- ! Submit Button -->
